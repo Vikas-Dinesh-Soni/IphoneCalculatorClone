@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone Calculator Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="one">
+
+    <H1 id="heading">Iphone Calculator Clone - Walber :)</H1>
+</div>
+
+    <div class="calc">
+    
+    <form name="form1" class="calculatorbox" action="calc.html" method="POST">
+
+        <input type="text" name="answer" id = "answerbox" >
+
+        <br>
+        <input type="button" value="AC" name="clear" onclick="form1.answer.value = ''"  id="greybut">
+        <input type="button" value="<" name="Backspace" onclick="form1.answer.value = form1.answer.value.substring(0,form1.answer.value.length*1-1)" id="greybut" class="smallbut">
+        <input type="button" value="%" name="Percentage" onclick="form1.answer.value+= '%'" id="greybut" class="smallbut">
+        <input type="button" value="&#xF7" name="Divide" onclick="form1.answer.value+='/'" id="yellowbut" class="smallbut">
+
+        <br>
+        <input type="button" value="7" name="7" onclick="form1.answer.value+='7'">
+        <input type="button" value="8" name="8" onclick="form1.answer.value+='8'">
+        <input type="button" value="9" name="9" onclick="form1.answer.value+='9'">
+        <input type="button" value="&#xD7" name="Multiply" onclick="form1.answer.value+='*'" id="yellowbut" class="smallbut">
+
+        <br>
+        <input type="button" value="4" name="4" onclick="form1.answer.value+='4'">
+        <input type="button" value="5" name="5" onclick="form1.answer.value+='5'">
+        <input type="button" value="6" name="6" onclick="form1.answer.value+='6'">
+        <input type="button" value="-" name="Subtract" onclick="form1.answer.value+='-'" id="yellowbut" class="smallbut">
+
+        <br>
+        <input type="button" value="1" name="1" onclick="form1.answer.value+='1'">
+        <input type="button" value="2" name="2" onclick="form1.answer.value+='2'">
+        <input type="button" value="3" name="3" onclick="form1.answer.value+='3'">
+        <input type="button" value="+" name="Add" onclick="form1.answer.value+='+'" id="yellowbut" class="smallbut">
+        
+        <br>
+        <input type="button" value="0" name="0" onclick="form1.answer.value+='0'" id="zero">
+        <input type="button" value="." name="." onclick="form1.answer.value+='.'">
+        <input type="button" value="=" name="=" onclick="form1.answer.value = eval(form1.answer.value)" id="yellowbut" class="smallbut">
+
+    </form>
+</div>
+
+
+
+</body>
+</html>
